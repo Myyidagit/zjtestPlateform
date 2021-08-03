@@ -14,7 +14,8 @@
           <el-col class="title">
             <div class="title_header no-select">
               <!-- 风行科技 暂时在这里写死 -->
-              <h3>中聚质量检测云平台</h3>
+              <!-- <h3>中聚质量检测云平台</h3> -->
+              <h3>练习技术</h3>
               <!-- <h3>开易车辆管理云平台</h3> -->
               <p>精准·精确·哈哈哈哈哈</p>
             </div>
@@ -29,14 +30,6 @@
                 <el-input v-model="login_form.password" type="password" placeholder="请输入登录密码" @keyup.enter.native="submit_login"></el-input>
                 <img src="../assets/image/password.png" alt="" style="position: absolute;left:10px;top:8px">
               </el-form-item>
-              <!-- <el-form-item style="margin-top:24px;position: relative;" prop="verificationCode">
-                <div class="identify_code">
-                  <el-input v-model="login_form.verificationCode" style="width:136px;float:left" maxlength="4" @keyup.enter.native="submit_login"></el-input>
-                  <div class="code" style="float:left;margin-left:30px;cursor: pointer;margin-top:1px;" @click="refreshCode">
-                    <identify :identifyCode="identifyCode"></identify>
-                  </div>
-                </div>
-              </el-form-item> -->
               <el-checkbox v-model="checked" checked>记住密码</el-checkbox>
               <el-form-item style="text-align: center;">
                 <el-button class="submit_login" type="primary" size="medium" @click="submit_login">登录</el-button>
@@ -54,7 +47,6 @@
 
 <script>
 import Base64 from "../assets/js/base.js";
-import identify from "../components/identify.vue";
 export default {
   name: "HelloWorld",
   data() {
@@ -95,7 +87,7 @@ export default {
       identifyCode: ""
     };
   },
-  components: { identify },
+  components: {  },
   mounted() {
     this.identifyCode = "";
     this.makeCode(this.identifyCodes, 4);

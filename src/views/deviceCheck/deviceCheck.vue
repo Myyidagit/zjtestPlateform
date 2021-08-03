@@ -2,14 +2,12 @@
  * @Descripttion: 
  * @version: 
  * @Author: Mr. Xu
- * @Date: 2021-07-27 18:51:47
+ * @Date: 2021-08-03 12:22:31
  * @LastEditors: Mr. Xu
- * @LastEditTime: 2021-07-27 18:53:53
+ * @LastEditTime: 2021-08-03 12:23:22
 -->
 <template>
-  <el-button type="primary" @click="bitEvent()">
-      <slot></slot>
-  </el-button>
+  <div class="deviceCheck">终端检测</div>
 </template>
 
 <script>
@@ -22,15 +20,11 @@ export default {
   },
   watch:{},
   computed:{},
-  methods:{
-      bitEvent(){
-          this.$emit("click");
-      }
-  },
+  methods:{},
   created(){},
   mounted(){}
 }
 </script>
 <style lang="scss" scoped>
-.myDiv{}
+.deviceCheck{}
 </style>
