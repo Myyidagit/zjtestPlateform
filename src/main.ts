@@ -26,6 +26,7 @@ import './element-variables.scss'
 import "@/directives/directives.js"
 import axiosHttp from "@/api"
 import "./assets/css/reset.css"
+import "./assets/css/elementui.css"
 
 Vue.use(Element);
 Vue.prototype.$http = axiosHttp;
